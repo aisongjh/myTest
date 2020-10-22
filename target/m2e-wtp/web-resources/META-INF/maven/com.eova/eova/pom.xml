@@ -6,11 +6,10 @@
 	<groupId>com.eova</groupId>
 	<artifactId>eova</artifactId>
 	<packaging>war</packaging>
-	<version>1.5</version>
+	<version>1.0.1</version>
 
 	<name>eova</name>
 	<url>http://git.oschina.net/eova/eova</url>
-
 	<properties>
 		<!-- 主要依赖库的版本定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,6 +21,8 @@
 
 		<druid.version>1.0.12</druid.version>
 		<ehcache.version>2.5.2</ehcache.version>
+
+
 
 		<jetty.version>8.1.8</jetty.version>
 		<jfinal.version>2.2</jfinal.version>
@@ -152,10 +153,10 @@
 	</dependencies>
 	<build>
 		<finalName>eova</finalName>
-		<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+	<!-- 	<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 		<testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
 		<outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
-		<testOutputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</testOutputDirectory>
+		<testOutputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</testOutputDirectory> -->
 
 		<plugins>
 			<!-- compiler插件, 设定JDK版本 -->
@@ -186,7 +187,6 @@
 					</webResources>
 				</configuration>
 			</plugin>
-
 			<!-- clean插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
